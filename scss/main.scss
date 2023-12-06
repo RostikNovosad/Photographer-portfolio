@@ -1,0 +1,41 @@
+@import "./utils/variable";
+
+// base
+// @import url(/scss/_base.scss);
+@import "./base";
+/* Header */
+// @import url(/scss/layout/_header.scss);
+@import "./layout/header.scss";
+/* Hero-section */
+// @import url(/scss/layout/_hero-section.scss);
+@import "./layout/hero-section";
+/* Button */
+// @import url(/scss/components/_button.scss);
+@import "./components/button.scss";
+/* Skills */
+// @import url(/scss/layout/_skills-section.scss);
+@import "./layout/skills-section.scss";
+@import "./components/skills-card";
+
+@import "./components/section-title";
+
+/* Container */
+@import "./layout/container";
+
+// @import url(/scss/components/_skills-card.scss);
+
+/* Portfolio */
+@import "./layout/portfolio-section";
+
+/* Video */
+@import "./layout/video-section";
+
+/* Price */
+@import "./layout/price-section";
+
+/* Contact */
+@import "./layout/contact-section";
+/* test style */
+
+/* footer */
+@import "./layout/footer";

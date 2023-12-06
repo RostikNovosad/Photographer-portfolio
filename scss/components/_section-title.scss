@@ -1,0 +1,28 @@
+.section-title {
+  font-family: var(--title-text);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 2;
+  color: var(--color-gold);
+  text-align: center;
+  position: relative;
+  margin: 100px auto 60px;
+
+  &::before,
+  &::after {
+    display: block;
+    width: 300px;
+    border: 2px solid var(--color-gold);
+    content: "";
+    position: absolute;
+    bottom: 40px;
+  }
+
+  &::before {
+    left: 250px;
+  }
+
+  &::after {
+    right: 250px;
+  }
+}

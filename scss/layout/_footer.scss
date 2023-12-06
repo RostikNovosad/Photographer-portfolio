@@ -1,0 +1,23 @@
+.footer-section {
+  background-color: var(--color-black);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__data {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-media {
+    display: flex;
+    gap: 20px;
+
+    &--icon {
+      max-width: 32px;
+      max-height: 32px;
+    }
+  }
+}
