@@ -1,28 +1,46 @@
 .section-title {
   font-family: var(--title-text);
   font-weight: 700;
-  font-size: 40px;
-  line-height: 2;
+  font-size: 32px;
+  line-height: 1.2;
   color: var(--color-gold);
   text-align: center;
   position: relative;
   margin: 100px auto 60px;
 
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 40px;
+    line-height: 2;
+  }
+
   &::before,
   &::after {
     display: block;
-    width: 300px;
+    width: 135px;
     border: 2px solid var(--color-gold);
     content: "";
     position: absolute;
-    bottom: 40px;
+    bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 300px;
+      bottom: 40px;
+    }
   }
 
   &::before {
     left: 250px;
+
+    @media screen and (min-width: $bp-desktop) {
+      left: 250px;
+    }
   }
 
   &::after {
     right: 250px;
+
+    @media screen and (min-width: $bp-desktop) {
+      right: 250px;
+    }
   }
 }
