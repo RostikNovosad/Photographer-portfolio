@@ -3,7 +3,11 @@
 
   &__container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: flex-end;
+    }
   }
 
   &__container--form {
@@ -11,6 +15,11 @@
     margin-bottom: 195px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      align-items: start;
+    }
   }
 
   &__container--form-title {
