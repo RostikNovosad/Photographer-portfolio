@@ -2,11 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 200px;
 
   &--img {
     max-width: 66px;
     max-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 50px;
+    }
   }
 
   &--title {

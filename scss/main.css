@@ -171,21 +171,40 @@ body {
 }
 
 /* Skills */
-.skills-section__card-container {
+.skills-section__container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.skills-section__container__card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
+  max-width: 630px;
+}
+@media screen and (min-width: 1280px) {
+  .skills-section__container__card {
+    max-width: 1400px;
+  }
 }
 
 .skills-section__card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 200px;
 }
 .skills-section__card--img {
   max-width: 66px;
   max-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1280px) {
+  .skills-section__card--img {
+    margin-bottom: 50px;
+  }
 }
 .skills-section__card--title {
   font-family: var(--secondary-text);
@@ -255,6 +274,7 @@ body {
 
 /* Container */
 .container {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;

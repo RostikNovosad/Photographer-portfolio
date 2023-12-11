@@ -1,5 +1,16 @@
-.skills-section__card-container {
+.skills-section__container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 630px;
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 1400px;
+    }
+  }
 }
