@@ -6,11 +6,12 @@
   color: var(--color-gold);
   text-align: center;
   position: relative;
-  margin: 100px auto 60px;
+  margin: 80px auto 50px;
 
   @media screen and (min-width: $bp-desktop) {
     font-size: 40px;
     line-height: 2;
+    margin: 100px auto 60px;
   }
 
   &::before,
