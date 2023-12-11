@@ -103,11 +103,12 @@ body {
 }
 .mobile-menu__btn-close {
   background-color: transparent;
+  border: none;
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 16px;
-  right: 24px;
+  top: 20px;
+  right: 60px;
 }
 
 /* Hero-section */
@@ -274,7 +275,6 @@ body {
 
 /* Container */
 .container {
-  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
