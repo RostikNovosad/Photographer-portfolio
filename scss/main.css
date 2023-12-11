@@ -221,7 +221,7 @@ body {
   }
 }
 .section-title::before, .section-title::after {
-  display: block;
+  display: none;
   width: 135px;
   border: 2px solid var(--color-gold);
   content: "";
@@ -230,6 +230,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .section-title::before, .section-title::after {
+    display: block;
     width: 300px;
     bottom: 40px;
   }
@@ -261,16 +262,29 @@ body {
 }
 
 /* Portfolio */
-.portfolio-section__season {
+.portfolio-section__container {
   display: flex;
   justify-content: center;
+}
+.portfolio-section__container__season {
+  width: 100%;
+  max-width: 485px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 60px;
 }
-.portfolio-section__season--button {
+@media screen and (min-width: 1280px) {
+  .portfolio-section__container__season {
+    max-width: 900px;
+  }
+}
+.portfolio-section__container__season--button {
   padding: 10px;
-  max-width: 220px;
   width: 100%;
+  max-width: 220px;
   font-family: var(--secondary-text);
   font-weight: 400;
   font-size: 20px;
@@ -279,7 +293,7 @@ body {
   background-color: var(--color-black);
   color: var(--color-gold);
 }
-.portfolio-section__season--button:hover {
+.portfolio-section__container__season--button:hover {
   border: 0;
   background-color: var(--color-gold);
   color: var(--color-black);
@@ -289,7 +303,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
-  flex-basis: 1/3;
+  flex-basis: 33%;
   flex-wrap: wrap;
   flex-direction: row;
 }

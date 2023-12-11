@@ -15,7 +15,7 @@
 
   &::before,
   &::after {
-    display: block;
+    display: none;
     width: 135px;
     border: 2px solid var(--color-gold);
     content: "";
@@ -23,6 +23,7 @@
     bottom: 24px;
 
     @media screen and (min-width: $bp-desktop) {
+      display: block;
       width: 300px;
       bottom: 40px;
     }

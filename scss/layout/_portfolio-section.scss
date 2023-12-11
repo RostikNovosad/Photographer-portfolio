@@ -1,26 +1,38 @@
 .portfolio-section {
-  &__season {
+  &__container {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    margin-bottom: 60px;
-  }
-  &__season--button {
-    padding: 10px;
-    max-width: 220px;
-    width: 100%;
-    font-family: var(--secondary-text);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 2;
-    border: 2px solid var(--color-gold);
-    background-color: var(--color-black);
-    color: var(--color-gold);
+    &__season {
+      width: 100%;
+      max-width: 485px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 60px;
 
-    &:hover {
-      border: 0;
-      background-color: var(--color-gold);
-      color: var(--color-black);
+      @media screen and (min-width: $bp-desktop) {
+        max-width: 900px;
+      }
+    }
+    &__season--button {
+      padding: 10px;
+      width: 100%;
+      max-width: 220px;
+      font-family: var(--secondary-text);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 2;
+      border: 2px solid var(--color-gold);
+      background-color: var(--color-black);
+      color: var(--color-gold);
+
+      &:hover {
+        border: 0;
+        background-color: var(--color-gold);
+        color: var(--color-black);
+      }
     }
   }
 
@@ -29,7 +41,7 @@
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-basis: 1/3;
+    flex-basis: 33%;
     flex-wrap: wrap;
     flex-direction: row;
   }
