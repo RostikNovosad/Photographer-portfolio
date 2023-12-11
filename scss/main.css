@@ -110,6 +110,12 @@ body {
   top: 20px;
   right: 60px;
 }
+.mobile-menu__navigation-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+}
 
 /* Hero-section */
 .hero-section {
