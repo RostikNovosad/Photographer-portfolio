@@ -255,7 +255,7 @@ body {
   background-color: var(--color-gold);
   align-items: center;
   margin-inline: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 1280px) {
   .section-title::before, .section-title::after {
