@@ -1,5 +1,9 @@
 .contact-section {
-  background-color: aliceblue;
+  background-image: url("../images/contacts-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  // background-color: aliceblue;
 
   &__container {
     display: flex;
