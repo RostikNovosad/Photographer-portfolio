@@ -248,34 +248,18 @@ body {
   }
 }
 .section-title::before, .section-title::after {
-  display: none;
-  width: 135px;
-  border: 2px solid var(--color-gold);
   content: "";
-  position: absolute;
-  bottom: 24px;
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-gold);
+  align-items: center;
+  margin-inline: 20px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 1280px) {
   .section-title::before, .section-title::after {
-    display: block;
-    width: 300px;
-    bottom: 40px;
-  }
-}
-.section-title::before {
-  left: 250px;
-}
-@media screen and (min-width: 1280px) {
-  .section-title::before {
-    left: 250px;
-  }
-}
-.section-title::after {
-  right: 250px;
-}
-@media screen and (min-width: 1280px) {
-  .section-title::after {
-    right: 250px;
+    width: 250px;
   }
 }
 
